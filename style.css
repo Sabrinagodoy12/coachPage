@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lexend;
+}
+/*Navbar estilos*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #496c70;
+  height: 60px;
+  color: #e3e0d3;
+}
+ul {
+  list-style-type: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #e3e0d3;
+}
+
+.brand h2 {
+  font-size: 1.5rem;
+}
+
+.brand p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/*Main estilos*/
