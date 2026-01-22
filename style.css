@@ -9,7 +9,6 @@ body {
 }
 
 /*Navbar estilos*/
-
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -45,6 +44,12 @@ body {
 }
 #tema-icon {
   margin-left: 5px;
+}
+/*Navbar mobile */
+.abrir-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /*Main estilos*/
@@ -104,7 +109,7 @@ body {
 
 /*Sobre nosotros - sección información*/
 
-.seccion-nosotros {
+#seccion-nosotros {
   background-color: #496c70;
   padding: 20px 50px;
   color: #e3e0d3;
@@ -128,7 +133,7 @@ body {
 }
 
 /*Sobre nosotros - sección servicios*/
-.seccion-servicios {
+#seccion-servicios {
   text-align: center;
   font-size: 3rem;
   margin-top: 20px;
@@ -142,7 +147,7 @@ body {
   gap: 20px;
 }
 
-.seccion-servicios article {
+#seccion-servicios article {
   background-color: #ebe6d7;
   color: #496c70;
   padding: 15px;
@@ -156,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.seccion-servicios article i {
+#seccion-servicios article i {
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -180,6 +185,7 @@ footer {
   font-size: 2rem;
   margin-bottom: 3rem;
   text-align: center;
+  text-decoration: underline;
 }
 .seccion-footer {
   display: flex;
@@ -188,7 +194,7 @@ footer {
   margin-top: 10px;
 }
 .brand-footer h4 {
-  margin-bottom: 2px;
+  margin-bottom: 0.5px;
   font-size: 1.5rem;
   font-weight: 500;
 }
