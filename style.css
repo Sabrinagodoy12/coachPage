@@ -128,6 +128,12 @@ body {
 }
 
 /*Sobre nosotros - sección servicios*/
+.seccion-servicios {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #496c70;
+}
 .contenedor-servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -153,4 +159,52 @@ body {
 .seccion-servicios article i {
   margin-bottom: 20px;
   font-size: 2.5rem;
+}
+
+.texto-aclaracion {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #496c70;
+  margin-top: 2rem;
+}
+
+/*Footer*/
+footer {
+  background-color: #496c70;
+  color: #e3e0d3;
+  padding: 15px;
+}
+.titulo-footer {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.seccion-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 10px;
+}
+.brand-footer h4 {
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.brand-footer p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-style: italic;
+}
+.fa-location-dot {
+  color: #e3e0d3;
+  margin-bottom: 7px;
+}
+.btn-whatsapp-footer {
+  display: inline-block;
+  color: #e3e0d3;
+  text-decoration: none;
+  gap: 10px;
+  margin-bottom: 7px;
 }
