@@ -54,8 +54,8 @@ body {
 .cerrar-menu {
   display: none;
 }
-/*Main estilos*/
 
+/*Main estilos*/
 .main {
   height: calc(86vh);
   display: flex;
@@ -108,7 +108,20 @@ body {
   margin-right: 50px;
   border-radius: 10px;
 }
-
+.btn-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #496c70;
+  color: #e3e0d3;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
 /*Sobre nosotros - sección información*/
 
 #seccion-nosotros {
@@ -181,7 +194,7 @@ body {
 footer {
   background-color: #496c70;
   color: #e3e0d3;
-  padding: 15px;
+  padding: 20px;
 }
 .titulo-footer {
   font-size: 2rem;
@@ -195,9 +208,13 @@ footer {
   padding: 0 50px;
   margin-top: 10px;
 }
+.contacto-footer {
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+}
 .brand-footer h4 {
   margin-bottom: 0.5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .brand-footer p {
@@ -218,6 +235,36 @@ footer {
 }
 
 /*Estilos responsivos*/
+@media (min-width: 1025px) {
+  .main {
+    height: calc(90vh);
+  }
+  .main-imagen {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .titulo-main {
+    font-size: 4rem;
+  }
+  .main-imagen {
+    width: 23rem;
+    height: 15rem;
+  }
+  .texto-main {
+    font-size: 1.2rem;
+  }
+  .btn-whatsapp {
+    width: 300px;
+  }
+  .main {
+    height: calc(90vh);
+  }
+  .titulo-servicios {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .abrir-menu {
     display: block;
@@ -251,5 +298,105 @@ footer {
   nav .visible {
     opacity: 1;
     visibility: visible;
+  }
+  .main {
+    flex-direction: column;
+    height: auto;
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
+  .contenedor-main {
+    width: 90%;
+    margin: 0;
+  }
+  .main-imagen {
+    display: none;
+  }
+  .titulo-servicios {
+    font-size: 2rem;
+  }
+  .contenedor-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, fr);
+  }
+  #seccion-servicios article {
+    font-size: 0.9rem;
+  }
+  .btn-whatsapp {
+    width: 250px;
+    font-size: 1rem;
+  }
+  .texto-aclaracion {
+    font-size: 0.7rem;
+  }
+  .texto-nosotros {
+    font-size: 1rem;
+  }
+  /*Footer*/
+  .titulo-footer {
+    font-size: 1.5rem;
+  }
+  .seccion-footer {
+    padding: 0;
+  }
+  .brand-footer .text-footer {
+    font-size: 1rem;
+  }
+  .contacto-footer {
+    font-size: 1rem;
+  }
+  .btn-arriba {
+    bottom: 85px;
+  }
+}
+@media (max-width: 480px) {
+  .titulo-main {
+    font-size: 3rem;
+  }
+  .texto-main {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .contenedor-servicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, fr);
+    padding: 10px 10px;
+  }
+  #navbar {
+    padding: 10px 20px;
+  }
+  .brand-nombre {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    width: 50%;
+  }
+  /*Sección Nosotros*/
+  #seccion-nosotros {
+    padding: 10px 10px;
+  }
+  .titulo-nosotros {
+    font-size: 2rem;
+  }
+  .subtitulo-nosotros {
+    font-size: 1.2rem;
+  }
+  .texto-nosotros {
+    font-size: 0.9rem;
+  }
+
+  /*Footer*/
+  .seccion-footer {
+    flex-direction: column;
+  }
+  .brand-footer {
+    margin-bottom: 20px;
+  }
+  .text-footer {
+    margin-bottom: 20px;
+  }
+  .texto-aclaracion {
+    font-size: 0.6rem;
   }
 }
