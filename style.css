@@ -60,7 +60,7 @@ body {
 }
 
 /*Main estilos*/
-.main {
+#main {
   height: calc(86vh);
   display: flex;
   flex-direction: row;
@@ -125,6 +125,7 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  box-shadow: #e3e0d3 2px 2px 5px;
 }
 /*Sobre nosotros - sección información*/
 
@@ -240,7 +241,7 @@ footer {
 
 /*Estilos responsivos*/
 @media (min-width: 1025px) {
-  .main {
+  #main {
     height: calc(90vh);
   }
   .main-imagen {
@@ -263,7 +264,7 @@ footer {
   .btn-whatsapp {
     width: 300px;
   }
-  .main {
+  #main {
     height: calc(90vh);
   }
   /*Sección servicios*/
@@ -306,7 +307,7 @@ footer {
     visibility: visible;
   }
   /*Main*/
-  .main {
+  #main {
     flex-direction: column;
     height: auto;
     padding-top: 60px;
