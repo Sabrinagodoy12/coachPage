@@ -62,8 +62,8 @@ body {
 /*Main estilos*/
 #main {
   height: calc(86vh);
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: #496c70;
   align-items: center;
   justify-content: space-around;
@@ -308,21 +308,49 @@ footer {
   }
   /*Main*/
   #main {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "titulo"
+      "texto"
+      "imagen"
+      "informacion"
+      "boton";
     height: auto;
     padding-top: 60px;
     margin-bottom: 30px;
+    justify-items: center;
   }
   .contenedor-main {
-    width: 90%;
-    margin: 0;
+    display: contents;
   }
+  .titulo-main {
+    grid-area: titulo;
+    font-size: 3rem;
+  }
+  .texto-main {
+    grid-area: texto;
+    font-size: 1rem;
+  }
+
   .main-imagen {
-    display: none;
+    grid-area: imagen;
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .texto-informacion {
+    grid-area: informacion;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .btn-whatsapp {
+    grid-area: boton;
     width: 250px;
     font-size: 1rem;
+    align-items: center;
+    text-align: center;
   }
   /*Sección servicios*/
   .titulo-servicios {
@@ -364,11 +392,19 @@ footer {
 @media (max-width: 480px) {
   /*Main*/
   .titulo-main {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .texto-main {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
+  }
+  .main-imagen {
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .texto-informacion {
+    font-size: 0.8rem;
   }
   /*Sección servicios*/
   .contenedor-servicios {
