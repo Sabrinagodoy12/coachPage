@@ -72,8 +72,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  margin-left: 20px;
+  width: 60%;
+  margin-left: 70px;
 }
 .titulo-main {
   font-size: 5rem;
@@ -251,12 +251,17 @@ footer {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   /*Main*/
+  .contenedor-main {
+    width: 60%;
+    margin-left: 30px;
+  }
   .titulo-main {
     font-size: 4rem;
   }
   .main-imagen {
-    width: 23rem;
+    width: auto;
     height: 15rem;
+    margin-left: 10px;
   }
   .texto-main {
     font-size: 1.2rem;
